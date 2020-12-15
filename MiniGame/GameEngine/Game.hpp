@@ -11,6 +11,9 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <istream>
+#include <fstream>
+#import <OpenGLES/ES3/glext.h>
 
 using namespace std;
 #endif /* Game_hpp */

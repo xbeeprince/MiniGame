@@ -21,6 +21,8 @@
 		A31ED60C2588A8A300A4D25F /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED60A2588A8A300A4D25F /* Application.cpp */; };
 		A31ED6162588ACB600A4D25F /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED6142588ACB600A4D25F /* Graphics.cpp */; };
 		A31ED6222588B94100A4D25F /* SampleGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED6202588B94100A4D25F /* SampleGame.cpp */; };
+		A31ED62C2588D93E00A4D25F /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED62A2588D93E00A4D25F /* ShaderManager.cpp */; };
+		A31ED6352588D9BF00A4D25F /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED6332588D9BF00A4D25F /* Exception.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		A31ED6152588ACB600A4D25F /* Graphics.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graphics.hpp; sourceTree = "<group>"; };
 		A31ED6202588B94100A4D25F /* SampleGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SampleGame.cpp; sourceTree = "<group>"; };
 		A31ED6212588B94100A4D25F /* SampleGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SampleGame.hpp; sourceTree = "<group>"; };
+		A31ED62A2588D93E00A4D25F /* ShaderManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderManager.cpp; sourceTree = "<group>"; };
+		A31ED62B2588D93E00A4D25F /* ShaderManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderManager.hpp; sourceTree = "<group>"; };
+		A31ED6332588D9BF00A4D25F /* Exception.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Exception.cpp; sourceTree = "<group>"; };
+		A31ED6342588D9BF00A4D25F /* Exception.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Exception.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,12 +165,11 @@
 			isa = PBXGroup;
 			children = (
 				A31ED5E02588A2B200A4D25F /* Game.hpp */,
+				A31ED63A2588D9F500A4D25F /* Utils */,
+				A31ED6392588D9E000A4D25F /* Game */,
+				A31ED6292588D92600A4D25F /* Shader */,
 				A31ED6132588AC9600A4D25F /* Graphics */,
 				A31ED6092588A89000A4D25F /* Application */,
-				A31ED5E62588A2DD00A4D25F /* BaseGame.hpp */,
-				A31ED5E52588A2DD00A4D25F /* BaseGame.cpp */,
-				A31ED5EF2588A42300A4D25F /* GameScence.hpp */,
-				A31ED5EE2588A42300A4D25F /* GameScence.cpp */,
 			);
 			path = GameEngine;
 			sourceTree = "<group>";
@@ -202,6 +207,35 @@
 				A31ED6152588ACB600A4D25F /* Graphics.hpp */,
 			);
 			path = Graphics;
+			sourceTree = "<group>";
+		};
+		A31ED6292588D92600A4D25F /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				A31ED62A2588D93E00A4D25F /* ShaderManager.cpp */,
+				A31ED62B2588D93E00A4D25F /* ShaderManager.hpp */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		A31ED6392588D9E000A4D25F /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				A31ED5E62588A2DD00A4D25F /* BaseGame.hpp */,
+				A31ED5E52588A2DD00A4D25F /* BaseGame.cpp */,
+				A31ED5EF2588A42300A4D25F /* GameScence.hpp */,
+				A31ED5EE2588A42300A4D25F /* GameScence.cpp */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		A31ED63A2588D9F500A4D25F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A31ED6332588D9BF00A4D25F /* Exception.cpp */,
+				A31ED6342588D9BF00A4D25F /* Exception.hpp */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,7 +367,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31ED58D25889DFB00A4D25F /* MiniGameViewController.mm in Sources */,
+				A31ED62C2588D93E00A4D25F /* ShaderManager.cpp in Sources */,
 				A31ED58725889DFB00A4D25F /* MiniGamaAppDelegate.mm in Sources */,
+				A31ED6352588D9BF00A4D25F /* Exception.cpp in Sources */,
 				A31ED60C2588A8A300A4D25F /* Application.cpp in Sources */,
 				A31ED6222588B94100A4D25F /* SampleGame.cpp in Sources */,
 				A31ED5F02588A42300A4D25F /* GameScence.cpp in Sources */,
