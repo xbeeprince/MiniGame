@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface MiniGamaAppDelegate : UIResponder <UIApplicationDelegate>
 
 
 @end

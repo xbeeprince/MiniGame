@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A31ED58725889DFB00A4D25F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A31ED58625889DFB00A4D25F /* AppDelegate.m */; };
-		A31ED58D25889DFB00A4D25F /* MiniGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A31ED58C25889DFB00A4D25F /* MiniGameViewController.m */; };
+		A31ED58725889DFB00A4D25F /* MiniGamaAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A31ED58625889DFB00A4D25F /* MiniGamaAppDelegate.mm */; };
+		A31ED58D25889DFB00A4D25F /* MiniGameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A31ED58C25889DFB00A4D25F /* MiniGameViewController.mm */; };
 		A31ED59225889DFC00A4D25F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31ED59125889DFC00A4D25F /* Assets.xcassets */; };
 		A31ED59525889DFC00A4D25F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31ED59325889DFC00A4D25F /* LaunchScreen.storyboard */; };
 		A31ED59825889DFC00A4D25F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A31ED59725889DFC00A4D25F /* main.m */; };
@@ -16,6 +16,11 @@
 		A31ED5AD25889DFC00A4D25F /* MiniGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A31ED5AC25889DFC00A4D25F /* MiniGameUITests.m */; };
 		A31ED5CE2588A03000A4D25F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31ED5CD2588A03000A4D25F /* OpenGLES.framework */; };
 		A31ED5D02588A03E00A4D25F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31ED5CF2588A03E00A4D25F /* GLKit.framework */; };
+		A31ED5E72588A2DD00A4D25F /* BaseGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED5E52588A2DD00A4D25F /* BaseGame.cpp */; };
+		A31ED5F02588A42300A4D25F /* GameScence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED5EE2588A42300A4D25F /* GameScence.cpp */; };
+		A31ED60C2588A8A300A4D25F /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED60A2588A8A300A4D25F /* Application.cpp */; };
+		A31ED6162588ACB600A4D25F /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED6142588ACB600A4D25F /* Graphics.cpp */; };
+		A31ED6222588B94100A4D25F /* SampleGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED6202588B94100A4D25F /* SampleGame.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +42,10 @@
 
 /* Begin PBXFileReference section */
 		A31ED58225889DFB00A4D25F /* MiniGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A31ED58525889DFB00A4D25F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A31ED58625889DFB00A4D25F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A31ED58B25889DFB00A4D25F /* MiniGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiniGameViewController.h; sourceTree = "<group>"; };
-		A31ED58C25889DFB00A4D25F /* MiniGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniGameViewController.m; sourceTree = "<group>"; };
+		A31ED58525889DFB00A4D25F /* MiniGamaAppDelegate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MiniGamaAppDelegate.hpp; sourceTree = "<group>"; };
+		A31ED58625889DFB00A4D25F /* MiniGamaAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MiniGamaAppDelegate.mm; sourceTree = "<group>"; };
+		A31ED58B25889DFB00A4D25F /* MiniGameViewController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MiniGameViewController.hpp; sourceTree = "<group>"; };
+		A31ED58C25889DFB00A4D25F /* MiniGameViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MiniGameViewController.mm; sourceTree = "<group>"; };
 		A31ED59125889DFC00A4D25F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A31ED59425889DFC00A4D25F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A31ED59625889DFC00A4D25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +58,17 @@
 		A31ED5AE25889DFC00A4D25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A31ED5CD2588A03000A4D25F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		A31ED5CF2588A03E00A4D25F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A31ED5E02588A2B200A4D25F /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		A31ED5E52588A2DD00A4D25F /* BaseGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BaseGame.cpp; sourceTree = "<group>"; };
+		A31ED5E62588A2DD00A4D25F /* BaseGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BaseGame.hpp; sourceTree = "<group>"; };
+		A31ED5EE2588A42300A4D25F /* GameScence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameScence.cpp; sourceTree = "<group>"; };
+		A31ED5EF2588A42300A4D25F /* GameScence.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameScence.hpp; sourceTree = "<group>"; };
+		A31ED60A2588A8A300A4D25F /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		A31ED60B2588A8A300A4D25F /* Application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
+		A31ED6142588ACB600A4D25F /* Graphics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Graphics.cpp; sourceTree = "<group>"; };
+		A31ED6152588ACB600A4D25F /* Graphics.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graphics.hpp; sourceTree = "<group>"; };
+		A31ED6202588B94100A4D25F /* SampleGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SampleGame.cpp; sourceTree = "<group>"; };
+		A31ED6212588B94100A4D25F /* SampleGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SampleGame.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +122,8 @@
 		A31ED58425889DFB00A4D25F /* MiniGame */ = {
 			isa = PBXGroup;
 			children = (
-				A31ED58525889DFB00A4D25F /* AppDelegate.h */,
-				A31ED58625889DFB00A4D25F /* AppDelegate.m */,
-				A31ED58B25889DFB00A4D25F /* MiniGameViewController.h */,
-				A31ED58C25889DFB00A4D25F /* MiniGameViewController.m */,
-				A31ED59125889DFC00A4D25F /* Assets.xcassets */,
-				A31ED59325889DFC00A4D25F /* LaunchScreen.storyboard */,
-				A31ED59625889DFC00A4D25F /* Info.plist */,
-				A31ED59725889DFC00A4D25F /* main.m */,
+				A31ED5D72588A21C00A4D25F /* GameEngine */,
+				A31ED5D82588A23800A4D25F /* Sample */,
 			);
 			path = MiniGame;
 			sourceTree = "<group>";
@@ -143,6 +153,55 @@
 				A31ED5CD2588A03000A4D25F /* OpenGLES.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A31ED5D72588A21C00A4D25F /* GameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				A31ED5E02588A2B200A4D25F /* Game.hpp */,
+				A31ED6132588AC9600A4D25F /* Graphics */,
+				A31ED6092588A89000A4D25F /* Application */,
+				A31ED5E62588A2DD00A4D25F /* BaseGame.hpp */,
+				A31ED5E52588A2DD00A4D25F /* BaseGame.cpp */,
+				A31ED5EF2588A42300A4D25F /* GameScence.hpp */,
+				A31ED5EE2588A42300A4D25F /* GameScence.cpp */,
+			);
+			path = GameEngine;
+			sourceTree = "<group>";
+		};
+		A31ED5D82588A23800A4D25F /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				A31ED6202588B94100A4D25F /* SampleGame.cpp */,
+				A31ED6212588B94100A4D25F /* SampleGame.hpp */,
+				A31ED58525889DFB00A4D25F /* MiniGamaAppDelegate.hpp */,
+				A31ED58625889DFB00A4D25F /* MiniGamaAppDelegate.mm */,
+				A31ED58B25889DFB00A4D25F /* MiniGameViewController.hpp */,
+				A31ED58C25889DFB00A4D25F /* MiniGameViewController.mm */,
+				A31ED59125889DFC00A4D25F /* Assets.xcassets */,
+				A31ED59325889DFC00A4D25F /* LaunchScreen.storyboard */,
+				A31ED59625889DFC00A4D25F /* Info.plist */,
+				A31ED59725889DFC00A4D25F /* main.m */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		A31ED6092588A89000A4D25F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A31ED60A2588A8A300A4D25F /* Application.cpp */,
+				A31ED60B2588A8A300A4D25F /* Application.hpp */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A31ED6132588AC9600A4D25F /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				A31ED6142588ACB600A4D25F /* Graphics.cpp */,
+				A31ED6152588ACB600A4D25F /* Graphics.hpp */,
+			);
+			path = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +332,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A31ED58D25889DFB00A4D25F /* MiniGameViewController.m in Sources */,
-				A31ED58725889DFB00A4D25F /* AppDelegate.m in Sources */,
+				A31ED58D25889DFB00A4D25F /* MiniGameViewController.mm in Sources */,
+				A31ED58725889DFB00A4D25F /* MiniGamaAppDelegate.mm in Sources */,
+				A31ED60C2588A8A300A4D25F /* Application.cpp in Sources */,
+				A31ED6222588B94100A4D25F /* SampleGame.cpp in Sources */,
+				A31ED5F02588A42300A4D25F /* GameScence.cpp in Sources */,
 				A31ED59825889DFC00A4D25F /* main.m in Sources */,
+				A31ED6162588ACB600A4D25F /* Graphics.cpp in Sources */,
+				A31ED5E72588A2DD00A4D25F /* BaseGame.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HKMYZ3FVU;
-				INFOPLIST_FILE = MiniGame/Info.plist;
+				INFOPLIST_FILE = MiniGame/Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,7 +523,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HKMYZ3FVU;
-				INFOPLIST_FILE = MiniGame/Info.plist;
+				INFOPLIST_FILE = MiniGame/Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

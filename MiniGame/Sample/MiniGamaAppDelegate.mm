@@ -5,16 +5,16 @@
 //  Created by iprincewang on 2020/12/15.
 //
 
-#import "AppDelegate.h"
-#import "MiniGameViewController.h"
+#import "MiniGamaAppDelegate.hpp"
+#import "MiniGameViewController.hpp"
 
-@interface AppDelegate ()
+@interface MiniGamaAppDelegate ()
 {
     UIWindow *_window;
 }
 @end
 
-@implementation AppDelegate
+@implementation MiniGamaAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
