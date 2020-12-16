@@ -10,12 +10,15 @@
 
 #include "Game.hpp"
 #include "GameScence.hpp"
+#include "Node.hpp"
+
 
 namespace GameEngine {
 
 class BaseGame {
   
 private:
+    vector<Node*> nodes;
 public:
     BaseGame();
     ~BaseGame();
