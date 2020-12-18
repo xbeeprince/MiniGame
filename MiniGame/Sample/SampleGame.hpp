@@ -9,13 +9,23 @@
 #define SampleGame_hpp
 
 #include "BaseGame.hpp"
+#include "VertexArray.hpp"
+#include "Buffer.hpp"
+#include "ShaderManager.hpp"
+
 using namespace GameEngine;
 
 class SampleGame : public BaseGame {
 private:
+    string *resourcePath;
+    string *v_path;
+    string *f_path;
+    ShaderManager *shader;
+    VertexArray *vao;
 public:
     SampleGame();
     ~SampleGame();
+    void initResourcePath(string *resource);
     
     virtual void initialize();
     virtual void ready();

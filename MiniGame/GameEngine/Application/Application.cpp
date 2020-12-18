@@ -16,6 +16,7 @@ Application::Application(BaseGame *game) : _game(game) {
 void Application::initialize() {
     cout << "Application init..." << endl;
     _graphics = new Graphics();
+    _game->initialize();
 }
 
 void Application::loop() {

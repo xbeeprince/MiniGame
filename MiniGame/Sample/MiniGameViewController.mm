@@ -8,6 +8,8 @@
 #import "MiniGameViewController.hpp"
 #include "Application.hpp"
 #include "SampleGame.hpp"
+#include <string>
+
 
 using namespace GameEngine;
 
@@ -23,8 +25,15 @@ using namespace GameEngine;
 -(instancetype)init {
     if (self = [super init]) {
         _game = new SampleGame();
+        NSString *resource = [[NSBundle mainBundle] resourcePath];
+//        NSString *shaderPath = [NSString stringWithFormat:@"%@/%@",[[NSBundle mainBundle] bundlePath],@"shaders/"];
+//
+//        NSArray * paths = [NSBundle pathsForResourcesOfType: @"glsl" inDirectory:shaderPath];
+        
+        
+        std::string *res = new std::string([resource UTF8String]);
+        _game->initResourcePath(res);
         _application = new Application(_game);
-        _application->initialize();
     }
     return self;
 }
@@ -36,6 +45,7 @@ using namespace GameEngine;
     
     self.preferredFramesPerSecond = 60;
     
+    _application->initialize();
     _application->ready((int)self.view.bounds.size.width * self.view.contentScaleFactor, (int)self.view.bounds.size.height * self.view.contentScaleFactor);
 }
 

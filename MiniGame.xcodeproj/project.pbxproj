@@ -33,6 +33,9 @@
 		A31ED6792589F75E00A4D25F /* Quad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED6772589F75E00A4D25F /* Quad.cpp */; };
 		A31ED6842589FB9500A4D25F /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED6822589FB9500A4D25F /* Texture.cpp */; };
 		A31ED693258A00E000A4D25F /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED691258A00E000A4D25F /* Image.cpp */; };
+		A37D9124258C502800E71707 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D9122258C502800E71707 /* Buffer.cpp */; };
+		A37D9133258C80A200E71707 /* VertexArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D9131258C80A200E71707 /* VertexArray.cpp */; };
+		A37D9145258C8A1B00E71707 /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = A37D9144258C8A1B00E71707 /* shaders */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,11 @@
 		A31ED6832589FB9500A4D25F /* Texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Texture.hpp; sourceTree = "<group>"; };
 		A31ED691258A00E000A4D25F /* Image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
 		A31ED692258A00E000A4D25F /* Image.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Image.hpp; sourceTree = "<group>"; };
+		A37D9122258C502800E71707 /* Buffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
+		A37D9123258C502800E71707 /* Buffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Buffer.hpp; sourceTree = "<group>"; };
+		A37D9131258C80A200E71707 /* VertexArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VertexArray.cpp; sourceTree = "<group>"; };
+		A37D9132258C80A200E71707 /* VertexArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VertexArray.hpp; sourceTree = "<group>"; };
+		A37D9144258C8A1B00E71707 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +215,7 @@
 		A31ED5D82588A23800A4D25F /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				A31ED6802589F9D500A4D25F /* shaders */,
+				A37D9144258C8A1B00E71707 /* shaders */,
 				A31ED6202588B94100A4D25F /* SampleGame.cpp */,
 				A31ED6212588B94100A4D25F /* SampleGame.hpp */,
 				A31ED58525889DFB00A4D25F /* MiniGamaAppDelegate.hpp */,
@@ -242,6 +250,10 @@
 				A31ED6772589F75E00A4D25F /* Quad.cpp */,
 				A31ED6832589FB9500A4D25F /* Texture.hpp */,
 				A31ED6822589FB9500A4D25F /* Texture.cpp */,
+				A37D9122258C502800E71707 /* Buffer.cpp */,
+				A37D9123258C502800E71707 /* Buffer.hpp */,
+				A37D9131258C80A200E71707 /* VertexArray.cpp */,
+				A37D9132258C80A200E71707 /* VertexArray.hpp */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -287,21 +299,6 @@
 				A31ED692258A00E000A4D25F /* Image.hpp */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		A31ED6802589F9D500A4D25F /* shaders */ = {
-			isa = PBXGroup;
-			children = (
-				A31ED6812589FA0200A4D25F /* fonts */,
-			);
-			path = shaders;
-			sourceTree = "<group>";
-		};
-		A31ED6812589FA0200A4D25F /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A37D9145258C8A1B00E71707 /* shaders in Resources */,
 				A31ED59525889DFC00A4D25F /* LaunchScreen.storyboard in Resources */,
 				A31ED59225889DFC00A4D25F /* Assets.xcassets in Resources */,
 			);
@@ -443,11 +441,13 @@
 				A31ED64C2589AFFC00A4D25F /* Drawable.cpp in Sources */,
 				A31ED693258A00E000A4D25F /* Image.cpp in Sources */,
 				A31ED6352588D9BF00A4D25F /* Exception.cpp in Sources */,
+				A37D9133258C80A200E71707 /* VertexArray.cpp in Sources */,
 				A31ED6402589AF6D00A4D25F /* Node.cpp in Sources */,
 				A31ED60C2588A8A300A4D25F /* Application.cpp in Sources */,
 				A31ED6222588B94100A4D25F /* SampleGame.cpp in Sources */,
 				A31ED6842589FB9500A4D25F /* Texture.cpp in Sources */,
 				A31ED5F02588A42300A4D25F /* GameScence.cpp in Sources */,
+				A37D9124258C502800E71707 /* Buffer.cpp in Sources */,
 				A31ED6702589B52B00A4D25F /* Matrix.cpp in Sources */,
 				A31ED59825889DFC00A4D25F /* main.m in Sources */,
 				A31ED6162588ACB600A4D25F /* Graphics.cpp in Sources */,
