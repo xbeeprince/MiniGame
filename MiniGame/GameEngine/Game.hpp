@@ -8,6 +8,8 @@
 #ifndef Game_hpp
 #define Game_hpp
 
+#pragma once
+
 #include <iostream>
 #include <vector>
 #include <map>

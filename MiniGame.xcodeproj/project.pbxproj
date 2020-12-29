@@ -31,13 +31,14 @@
 		A31ED66A2589B51300A4D25F /* Vector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED6682589B51300A4D25F /* Vector4.cpp */; };
 		A31ED6702589B52B00A4D25F /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED66E2589B52B00A4D25F /* Matrix.cpp */; };
 		A31ED6792589F75E00A4D25F /* Quad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED6772589F75E00A4D25F /* Quad.cpp */; };
-		A31ED6842589FB9500A4D25F /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED6822589FB9500A4D25F /* Texture.cpp */; };
 		A31ED693258A00E000A4D25F /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED691258A00E000A4D25F /* Image.cpp */; };
 		A37D9124258C502800E71707 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D9122258C502800E71707 /* Buffer.cpp */; };
 		A37D9133258C80A200E71707 /* VertexArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D9131258C80A200E71707 /* VertexArray.cpp */; };
 		A37D9145258C8A1B00E71707 /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = A37D9144258C8A1B00E71707 /* shaders */; };
 		A37D914B258C9C4D00E71707 /* TexureBaseParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D9149258C9C4D00E71707 /* TexureBaseParam.cpp */; };
 		A37D9151258C9D3C00E71707 /* TexureNormalParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D914F258C9D3C00E71707 /* TexureNormalParam.cpp */; };
+		A3BD82D7259041810088BC51 /* TexureBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3BD82D5259041810088BC51 /* TexureBuffer.cpp */; };
+		A3BD82DF25904A270088BC51 /* images in Resources */ = {isa = PBXBuildFile; fileRef = A3BD82DE25904A270088BC51 /* images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +107,6 @@
 		A31ED66F2589B52B00A4D25F /* Matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
 		A31ED6772589F75E00A4D25F /* Quad.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Quad.cpp; sourceTree = "<group>"; };
 		A31ED6782589F75E00A4D25F /* Quad.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Quad.hpp; sourceTree = "<group>"; };
-		A31ED6822589FB9500A4D25F /* Texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
-		A31ED6832589FB9500A4D25F /* Texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Texture.hpp; sourceTree = "<group>"; };
 		A31ED691258A00E000A4D25F /* Image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
 		A31ED692258A00E000A4D25F /* Image.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Image.hpp; sourceTree = "<group>"; };
 		A37D9122258C502800E71707 /* Buffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
@@ -119,6 +118,9 @@
 		A37D914A258C9C4D00E71707 /* TexureBaseParam.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TexureBaseParam.hpp; sourceTree = "<group>"; };
 		A37D914F258C9D3C00E71707 /* TexureNormalParam.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TexureNormalParam.cpp; sourceTree = "<group>"; };
 		A37D9150258C9D3C00E71707 /* TexureNormalParam.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TexureNormalParam.hpp; sourceTree = "<group>"; };
+		A3BD82D5259041810088BC51 /* TexureBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TexureBuffer.cpp; sourceTree = "<group>"; };
+		A3BD82D6259041810088BC51 /* TexureBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TexureBuffer.hpp; sourceTree = "<group>"; };
+		A3BD82DE25904A270088BC51 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 		A31ED5D82588A23800A4D25F /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				A3BD82DE25904A270088BC51 /* images */,
 				A37D9144258C8A1B00E71707 /* shaders */,
 				A31ED6202588B94100A4D25F /* SampleGame.cpp */,
 				A31ED6212588B94100A4D25F /* SampleGame.hpp */,
@@ -258,8 +261,8 @@
 				A37D914A258C9C4D00E71707 /* TexureBaseParam.hpp */,
 				A37D914F258C9D3C00E71707 /* TexureNormalParam.cpp */,
 				A37D9150258C9D3C00E71707 /* TexureNormalParam.hpp */,
-				A31ED6832589FB9500A4D25F /* Texture.hpp */,
-				A31ED6822589FB9500A4D25F /* Texture.cpp */,
+				A3BD82D5259041810088BC51 /* TexureBuffer.cpp */,
+				A3BD82D6259041810088BC51 /* TexureBuffer.hpp */,
 				A37D9122258C502800E71707 /* Buffer.cpp */,
 				A37D9123258C502800E71707 /* Buffer.hpp */,
 				A37D9131258C80A200E71707 /* VertexArray.cpp */,
@@ -413,6 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3BD82DF25904A270088BC51 /* images in Resources */,
 				A37D9145258C8A1B00E71707 /* shaders in Resources */,
 				A31ED59525889DFC00A4D25F /* LaunchScreen.storyboard in Resources */,
 				A31ED59225889DFC00A4D25F /* Assets.xcassets in Resources */,
@@ -456,7 +460,7 @@
 				A37D9151258C9D3C00E71707 /* TexureNormalParam.cpp in Sources */,
 				A31ED60C2588A8A300A4D25F /* Application.cpp in Sources */,
 				A31ED6222588B94100A4D25F /* SampleGame.cpp in Sources */,
-				A31ED6842589FB9500A4D25F /* Texture.cpp in Sources */,
+				A3BD82D7259041810088BC51 /* TexureBuffer.cpp in Sources */,
 				A31ED5F02588A42300A4D25F /* GameScence.cpp in Sources */,
 				A37D9124258C502800E71707 /* Buffer.cpp in Sources */,
 				A31ED6702589B52B00A4D25F /* Matrix.cpp in Sources */,

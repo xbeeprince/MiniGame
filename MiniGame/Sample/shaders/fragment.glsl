@@ -1,9 +1,11 @@
 
 #version 300 es
-in mediump vec4 outColor;
+in mediump vec3 textureUV;
 out mediump vec4 FragColor;
+
+uniform sampler2D textureCord;
 
 void main()
 {
-    FragColor = outColor;
+    FragColor = texture(textureCord, vec2(textureUV.x, textureUV.y));
 }
