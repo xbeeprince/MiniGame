@@ -39,6 +39,7 @@
 		A37D9151258C9D3C00E71707 /* TextureNormalParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D914F258C9D3C00E71707 /* TextureNormalParam.cpp */; };
 		A3BD82D7259041810088BC51 /* TextureBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3BD82D5259041810088BC51 /* TextureBuffer.cpp */; };
 		A3BD82DF25904A270088BC51 /* images in Resources */ = {isa = PBXBuildFile; fileRef = A3BD82DE25904A270088BC51 /* images */; };
+		A3FE8FC6259C7BA700ED3464 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3FE8FC4259C7BA700ED3464 /* Mesh.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,8 @@
 		A3BD82D5259041810088BC51 /* TextureBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureBuffer.cpp; sourceTree = "<group>"; };
 		A3BD82D6259041810088BC51 /* TextureBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextureBuffer.hpp; sourceTree = "<group>"; };
 		A3BD82DE25904A270088BC51 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		A3FE8FC4259C7BA700ED3464 /* Mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		A3FE8FC5259C7BA700ED3464 /* Mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +270,8 @@
 				A37D9123258C502800E71707 /* VertexBuffer.hpp */,
 				A37D9131258C80A200E71707 /* VertexArray.cpp */,
 				A37D9132258C80A200E71707 /* VertexArray.hpp */,
+				A3FE8FC4259C7BA700ED3464 /* Mesh.cpp */,
+				A3FE8FC5259C7BA700ED3464 /* Mesh.hpp */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -468,6 +473,7 @@
 				A37D914B258C9C4D00E71707 /* TextureBaseParam.cpp in Sources */,
 				A31ED6162588ACB600A4D25F /* Graphics.cpp in Sources */,
 				A31ED5E72588A2DD00A4D25F /* BaseGame.cpp in Sources */,
+				A3FE8FC6259C7BA700ED3464 /* Mesh.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
