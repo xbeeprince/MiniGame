@@ -5,30 +5,30 @@
 //  Created by iprincewang on 2020/12/18.
 //
 
-#include "Buffer.hpp"
+#include "VertexBuffer.hpp"
 
 namespace GameEngine {
 
-Buffer::Buffer(const char *data, GLuint size) {
+VertexBuffer::VertexBuffer(const char *data, GLuint size) {
     init(data, size);
 }
 
-Buffer::~Buffer() {
+VertexBuffer::~VertexBuffer() {
     unbind();
 }
 
-void Buffer::init(const char *data, GLuint size) {
+void VertexBuffer::init(const char *data, GLuint size) {
     glGenBuffers(1, &m_bufferId);
-    bind();
+    glBindBuffer(GL_ARRAY_BUFFER, m_bufferId);
     glBufferData(GL_ARRAY_BUFFER, size, data, GL_STATIC_DRAW);
-    unbind();
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
 
-void Buffer::bind() {
+void VertexBuffer::bind() {
     glBindBuffer(GL_ARRAY_BUFFER, m_bufferId);
 }
 
-void Buffer::unbind() {
+void VertexBuffer::unbind() {
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
 }

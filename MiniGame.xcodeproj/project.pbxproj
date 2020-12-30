@@ -32,12 +32,12 @@
 		A31ED6702589B52B00A4D25F /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED66E2589B52B00A4D25F /* Matrix.cpp */; };
 		A31ED6792589F75E00A4D25F /* Quad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED6772589F75E00A4D25F /* Quad.cpp */; };
 		A31ED693258A00E000A4D25F /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED691258A00E000A4D25F /* Image.cpp */; };
-		A37D9124258C502800E71707 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D9122258C502800E71707 /* Buffer.cpp */; };
+		A37D9124258C502800E71707 /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D9122258C502800E71707 /* VertexBuffer.cpp */; };
 		A37D9133258C80A200E71707 /* VertexArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D9131258C80A200E71707 /* VertexArray.cpp */; };
 		A37D9145258C8A1B00E71707 /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = A37D9144258C8A1B00E71707 /* shaders */; };
-		A37D914B258C9C4D00E71707 /* TexureBaseParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D9149258C9C4D00E71707 /* TexureBaseParam.cpp */; };
-		A37D9151258C9D3C00E71707 /* TexureNormalParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D914F258C9D3C00E71707 /* TexureNormalParam.cpp */; };
-		A3BD82D7259041810088BC51 /* TexureBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3BD82D5259041810088BC51 /* TexureBuffer.cpp */; };
+		A37D914B258C9C4D00E71707 /* TextureBaseParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D9149258C9C4D00E71707 /* TextureBaseParam.cpp */; };
+		A37D9151258C9D3C00E71707 /* TextureNormalParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D914F258C9D3C00E71707 /* TextureNormalParam.cpp */; };
+		A3BD82D7259041810088BC51 /* TextureBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3BD82D5259041810088BC51 /* TextureBuffer.cpp */; };
 		A3BD82DF25904A270088BC51 /* images in Resources */ = {isa = PBXBuildFile; fileRef = A3BD82DE25904A270088BC51 /* images */; };
 /* End PBXBuildFile section */
 
@@ -109,17 +109,17 @@
 		A31ED6782589F75E00A4D25F /* Quad.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Quad.hpp; sourceTree = "<group>"; };
 		A31ED691258A00E000A4D25F /* Image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
 		A31ED692258A00E000A4D25F /* Image.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Image.hpp; sourceTree = "<group>"; };
-		A37D9122258C502800E71707 /* Buffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
-		A37D9123258C502800E71707 /* Buffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Buffer.hpp; sourceTree = "<group>"; };
+		A37D9122258C502800E71707 /* VertexBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBuffer.cpp; sourceTree = "<group>"; };
+		A37D9123258C502800E71707 /* VertexBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VertexBuffer.hpp; sourceTree = "<group>"; };
 		A37D9131258C80A200E71707 /* VertexArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VertexArray.cpp; sourceTree = "<group>"; };
 		A37D9132258C80A200E71707 /* VertexArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VertexArray.hpp; sourceTree = "<group>"; };
 		A37D9144258C8A1B00E71707 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
-		A37D9149258C9C4D00E71707 /* TexureBaseParam.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TexureBaseParam.cpp; sourceTree = "<group>"; };
-		A37D914A258C9C4D00E71707 /* TexureBaseParam.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TexureBaseParam.hpp; sourceTree = "<group>"; };
-		A37D914F258C9D3C00E71707 /* TexureNormalParam.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TexureNormalParam.cpp; sourceTree = "<group>"; };
-		A37D9150258C9D3C00E71707 /* TexureNormalParam.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TexureNormalParam.hpp; sourceTree = "<group>"; };
-		A3BD82D5259041810088BC51 /* TexureBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TexureBuffer.cpp; sourceTree = "<group>"; };
-		A3BD82D6259041810088BC51 /* TexureBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TexureBuffer.hpp; sourceTree = "<group>"; };
+		A37D9149258C9C4D00E71707 /* TextureBaseParam.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureBaseParam.cpp; sourceTree = "<group>"; };
+		A37D914A258C9C4D00E71707 /* TextureBaseParam.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextureBaseParam.hpp; sourceTree = "<group>"; };
+		A37D914F258C9D3C00E71707 /* TextureNormalParam.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureNormalParam.cpp; sourceTree = "<group>"; };
+		A37D9150258C9D3C00E71707 /* TextureNormalParam.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextureNormalParam.hpp; sourceTree = "<group>"; };
+		A3BD82D5259041810088BC51 /* TextureBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureBuffer.cpp; sourceTree = "<group>"; };
+		A3BD82D6259041810088BC51 /* TextureBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextureBuffer.hpp; sourceTree = "<group>"; };
 		A3BD82DE25904A270088BC51 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -257,14 +257,14 @@
 				A31ED64A2589AFFC00A4D25F /* Drawable.cpp */,
 				A31ED6782589F75E00A4D25F /* Quad.hpp */,
 				A31ED6772589F75E00A4D25F /* Quad.cpp */,
-				A37D9149258C9C4D00E71707 /* TexureBaseParam.cpp */,
-				A37D914A258C9C4D00E71707 /* TexureBaseParam.hpp */,
-				A37D914F258C9D3C00E71707 /* TexureNormalParam.cpp */,
-				A37D9150258C9D3C00E71707 /* TexureNormalParam.hpp */,
-				A3BD82D5259041810088BC51 /* TexureBuffer.cpp */,
-				A3BD82D6259041810088BC51 /* TexureBuffer.hpp */,
-				A37D9122258C502800E71707 /* Buffer.cpp */,
-				A37D9123258C502800E71707 /* Buffer.hpp */,
+				A37D9149258C9C4D00E71707 /* TextureBaseParam.cpp */,
+				A37D914A258C9C4D00E71707 /* TextureBaseParam.hpp */,
+				A37D914F258C9D3C00E71707 /* TextureNormalParam.cpp */,
+				A37D9150258C9D3C00E71707 /* TextureNormalParam.hpp */,
+				A3BD82D5259041810088BC51 /* TextureBuffer.cpp */,
+				A3BD82D6259041810088BC51 /* TextureBuffer.hpp */,
+				A37D9122258C502800E71707 /* VertexBuffer.cpp */,
+				A37D9123258C502800E71707 /* VertexBuffer.hpp */,
 				A37D9131258C80A200E71707 /* VertexArray.cpp */,
 				A37D9132258C80A200E71707 /* VertexArray.hpp */,
 			);
@@ -457,15 +457,15 @@
 				A31ED6352588D9BF00A4D25F /* Exception.cpp in Sources */,
 				A37D9133258C80A200E71707 /* VertexArray.cpp in Sources */,
 				A31ED6402589AF6D00A4D25F /* Node.cpp in Sources */,
-				A37D9151258C9D3C00E71707 /* TexureNormalParam.cpp in Sources */,
+				A37D9151258C9D3C00E71707 /* TextureNormalParam.cpp in Sources */,
 				A31ED60C2588A8A300A4D25F /* Application.cpp in Sources */,
 				A31ED6222588B94100A4D25F /* SampleGame.cpp in Sources */,
-				A3BD82D7259041810088BC51 /* TexureBuffer.cpp in Sources */,
+				A3BD82D7259041810088BC51 /* TextureBuffer.cpp in Sources */,
 				A31ED5F02588A42300A4D25F /* GameScence.cpp in Sources */,
-				A37D9124258C502800E71707 /* Buffer.cpp in Sources */,
+				A37D9124258C502800E71707 /* VertexBuffer.cpp in Sources */,
 				A31ED6702589B52B00A4D25F /* Matrix.cpp in Sources */,
 				A31ED59825889DFC00A4D25F /* main.m in Sources */,
-				A37D914B258C9C4D00E71707 /* TexureBaseParam.cpp in Sources */,
+				A37D914B258C9C4D00E71707 /* TextureBaseParam.cpp in Sources */,
 				A31ED6162588ACB600A4D25F /* Graphics.cpp in Sources */,
 				A31ED5E72588A2DD00A4D25F /* BaseGame.cpp in Sources */,
 			);

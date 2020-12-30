@@ -14,14 +14,14 @@ VertexArray::VertexArray() {
 }
 
 VertexArray::~VertexArray () {
-    for_each(m_buffers.begin(), m_buffers.end(), [](Buffer *buffer)->void {
+    for_each(m_buffers.begin(), m_buffers.end(), [](VertexBuffer *buffer)->void {
         buffer->unbind();
         delete buffer;
     });
     unbind();
 }
 
-void VertexArray::addBuffer(Buffer *buffer, GLint length, GLint index) {
+void VertexArray::addBuffer(VertexBuffer *buffer, GLint length, GLint index) {
     bind();
     
     buffer->bind();

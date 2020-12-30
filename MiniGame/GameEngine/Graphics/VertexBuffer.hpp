@@ -12,14 +12,14 @@
 
 namespace GameEngine {
 
-class Buffer {
+class VertexBuffer {
   
 private:
     GLuint m_bufferId;
     
 public:
-    Buffer(const char *data, GLuint size);
-    ~Buffer();
+    VertexBuffer(const char *data, GLuint size);
+    ~VertexBuffer();
     void init(const char *data, GLuint size);
     
     void bind();

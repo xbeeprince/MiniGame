@@ -9,7 +9,7 @@
 #define VertexArray_hpp
 
 #include "Game.hpp"
-#include "Buffer.hpp"
+#include "VertexBuffer.hpp"
 
 namespace GameEngine {
 
@@ -17,13 +17,13 @@ class VertexArray {
 private:
     
     GLuint m_vertexArrayId;
-    vector<Buffer*> m_buffers;
+    vector<VertexBuffer*> m_buffers;
   
 public:
     VertexArray();
     ~VertexArray();
     
-    void addBuffer(Buffer *buffer, GLint length, GLint index);
+    void addBuffer(VertexBuffer *buffer, GLint length, GLint index);
     
     void bind();
     void unbind();

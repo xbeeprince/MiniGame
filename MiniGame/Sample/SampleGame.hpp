@@ -10,8 +10,9 @@
 
 #include "BaseGame.hpp"
 #include "VertexArray.hpp"
-#include "Buffer.hpp"
+#include "VertexBuffer.hpp"
 #include "ShaderManager.hpp"
+#include "TextureBuffer.hpp"
 
 using namespace GameEngine;
 
@@ -20,8 +21,11 @@ private:
     string *resourcePath;
     string *v_path;
     string *f_path;
-    ShaderManager *shader;
-    VertexArray *vao;
+    ShaderManager *_shader;
+    VertexArray *_vao;
+    GLuint _ebo;
+    TextureBuffer *_texture_buffer;
+
 public:
     SampleGame();
     ~SampleGame();

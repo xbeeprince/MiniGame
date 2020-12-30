@@ -9,7 +9,7 @@
 #define TexureBuffer_hpp
 
 #include "Game.hpp"
-#include "TexureBaseParam.hpp"
+#include "TextureBaseParam.hpp"
 
 namespace GameEngine {
 
@@ -23,6 +23,7 @@ private:
         unsigned char* data = nullptr;
         int width;
         int height;
+        int nChannel;
     } image;
   
 public:
@@ -33,7 +34,7 @@ public:
     void bind();
     void unbind();
     
-    void createMipMap(TexureBaseParam param);
+    void createMipMap(TextureBaseParam* param);
     
 };
 }

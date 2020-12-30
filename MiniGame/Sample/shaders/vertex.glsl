@@ -1,12 +1,15 @@
 
 #version 300 es
-layout (location = 0) in vec3 vertexPosition;
-layout (location = 1) in vec3 texturePosition;
+layout (location = 0) in vec3 position;
+layout (location = 1) in vec3 color;
+layout (location = 2) in vec2 texCoord;
 
-out mediump vec3 textureUV;
+out mediump vec4 ourColor;
+out mediump vec2 TexCoord;
 
 void main()
 {
-    gl_Position = vec4(vertexPosition.x, vertexPosition.y, vertexPosition.z, 1.0);
-    textureUV = texturePosition;
+    gl_Position = vec4(position, 1.0f);
+    ourColor = vec4(color, 1.0f);
+    TexCoord = texCoord;
 }
