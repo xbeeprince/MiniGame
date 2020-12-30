@@ -78,6 +78,11 @@ void SampleGame::initialize() {
     _texture_buffer = new TextureBuffer(image_path.c_str());
     TextureBaseParam *param = new TextureNormalParam();
     _texture_buffer->createMipMap(param);
+    
+    _shader->Use();
+    GLint textureLoc = _shader->GetUniformLocation("ourTexture");
+    glUniform1i(textureLoc, 0);
+    _shader->UnUse();
 }
 
 void SampleGame::ready() {
@@ -100,11 +105,8 @@ void SampleGame::render() {
     _shader->Use();
     _vao->bind();
     
-//
     glActiveTexture(GL_TEXTURE0);
     _texture_buffer->bind();
-    GLint textureLoc = _shader->GetUniformLocation("ourTexture");
-    glUniform1i(textureLoc, 0);
     
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
     _texture_buffer->unbind();
