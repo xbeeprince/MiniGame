@@ -12,15 +12,20 @@
 
 namespace GameEngine {
 
+class TextureBuffer;
+
 class Vertex {
 private:
     float *m_array;
+    int m_length;
     int m_count;
 public:
-    Vertex(const float& array, int count);
+    Vertex(float *array, int count, int length);
     ~Vertex();
     
     inline int getCount() {return m_count;}
+    inline int getLength() {return m_length;}
+    inline void* getData(){return  m_array;};
 };
 
 class Mesh {
@@ -35,10 +40,11 @@ private:
     
     GLuint m_vertexArrayObject;
     GLuint m_vertexArrayBuffers[NUM_BUFFERS];
+    TextureBuffer *m_texture;
     unsigned int m_drawCount;
 public:
-    Mesh();
-    Mesh(Vertex *vertex);
+    Mesh(TextureBuffer *);
+    Mesh(Vertex *vertex, int count, int drawCount);
     ~Mesh();
     
     void draw();

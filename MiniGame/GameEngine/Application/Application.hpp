@@ -26,7 +26,7 @@ public:
     Application(BaseGame*);
     ~Application();
     
-    void initialize();
+    void initialize(string* resourcePath);
     void Resized(int width, int height);
     void ready(int width, int height);
     void pause();

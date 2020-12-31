@@ -16,8 +16,8 @@ BaseGame::~BaseGame() {
     
 }
 
-void BaseGame::initialize() {
-    
+void BaseGame::initialize(string *resPath) {
+    _resourcePath = resPath;
 }
 
 void BaseGame::ready() {

@@ -32,6 +32,7 @@
 		A31ED6702589B52B00A4D25F /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED66E2589B52B00A4D25F /* Matrix.cpp */; };
 		A31ED6792589F75E00A4D25F /* Quad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED6772589F75E00A4D25F /* Quad.cpp */; };
 		A31ED693258A00E000A4D25F /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A31ED691258A00E000A4D25F /* Image.cpp */; };
+		A34CF476259DACC5005745C5 /* TestGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A34CF474259DACC5005745C5 /* TestGame.cpp */; };
 		A37D9124258C502800E71707 /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D9122258C502800E71707 /* VertexBuffer.cpp */; };
 		A37D9133258C80A200E71707 /* VertexArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A37D9131258C80A200E71707 /* VertexArray.cpp */; };
 		A37D9145258C8A1B00E71707 /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = A37D9144258C8A1B00E71707 /* shaders */; };
@@ -110,6 +111,8 @@
 		A31ED6782589F75E00A4D25F /* Quad.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Quad.hpp; sourceTree = "<group>"; };
 		A31ED691258A00E000A4D25F /* Image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
 		A31ED692258A00E000A4D25F /* Image.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Image.hpp; sourceTree = "<group>"; };
+		A34CF474259DACC5005745C5 /* TestGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestGame.cpp; sourceTree = "<group>"; };
+		A34CF475259DACC5005745C5 /* TestGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestGame.hpp; sourceTree = "<group>"; };
 		A37D9122258C502800E71707 /* VertexBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBuffer.cpp; sourceTree = "<group>"; };
 		A37D9123258C502800E71707 /* VertexBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VertexBuffer.hpp; sourceTree = "<group>"; };
 		A37D9131258C80A200E71707 /* VertexArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VertexArray.cpp; sourceTree = "<group>"; };
@@ -230,6 +233,8 @@
 				A37D9144258C8A1B00E71707 /* shaders */,
 				A31ED6202588B94100A4D25F /* SampleGame.cpp */,
 				A31ED6212588B94100A4D25F /* SampleGame.hpp */,
+				A34CF474259DACC5005745C5 /* TestGame.cpp */,
+				A34CF475259DACC5005745C5 /* TestGame.hpp */,
 				A31ED58525889DFB00A4D25F /* MiniGamaAppDelegate.hpp */,
 				A31ED58625889DFB00A4D25F /* MiniGamaAppDelegate.mm */,
 				A31ED58B25889DFB00A4D25F /* MiniGameViewController.hpp */,
@@ -456,6 +461,7 @@
 				A31ED66A2589B51300A4D25F /* Vector4.cpp in Sources */,
 				A31ED6552589B3D400A4D25F /* Color.cpp in Sources */,
 				A31ED62C2588D93E00A4D25F /* ShaderManager.cpp in Sources */,
+				A34CF476259DACC5005745C5 /* TestGame.cpp in Sources */,
 				A31ED58725889DFB00A4D25F /* MiniGamaAppDelegate.mm in Sources */,
 				A31ED64C2589AFFC00A4D25F /* Drawable.cpp in Sources */,
 				A31ED693258A00E000A4D25F /* Image.cpp in Sources */,

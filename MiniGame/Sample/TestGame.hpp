@@ -1,34 +1,35 @@
 //
-//  SampleGame.hpp
+//  TestGame.hpp
 //  MiniGame
 //
-//  Created by iprincewang on 2020/12/15.
+//  Created by prince on 2020/12/31.
 //
 
-#ifndef SampleGame_hpp
-#define SampleGame_hpp
+#ifndef TestGame_hpp
+#define TestGame_hpp
 
+#include "Game.hpp"
 #include "BaseGame.hpp"
 #include "VertexArray.hpp"
 #include "VertexBuffer.hpp"
 #include "ShaderManager.hpp"
 #include "TextureBuffer.hpp"
+#include "Mesh.hpp"
 
-using namespace GameEngine;
+namespace GameEngine {
 
-class SampleGame : public BaseGame {
+class TestGame : public BaseGame {
 private:
     string *v_path;
     string *f_path;
     ShaderManager *_shader;
-    VertexArray *_vao;
-    GLuint _ebo;
-    TextureBuffer *_texture_buffer;
+    Mesh *_mesh;
+    TextureBuffer *_texture;
 
 public:
-    SampleGame();
-    ~SampleGame();
-
+    TestGame();
+    ~TestGame();
+    
     virtual void initialize(string *resPath);
     virtual void ready();
     virtual void resize(int width, int height);
@@ -38,5 +39,6 @@ public:
     virtual void resume();
     virtual void finalize();
 };
+}
 
-#endif /* SampleGame_hpp */
+#endif /* TestGame_hpp */

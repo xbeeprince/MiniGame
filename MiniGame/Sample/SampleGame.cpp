@@ -10,7 +10,7 @@
 #include "Image.hpp"
 
 //形状坐标
-float vertex[] = {
+static float vertex[] = {
     0.5f, 0.5f, 0.0f,   // 右上角
     0.5f, -0.5f, 0.0f,  // 右下角
     -0.5f, -0.5f, 0.0f, // 左下角
@@ -18,7 +18,7 @@ float vertex[] = {
 };
 
 //坐标颜色
-float color[] = {
+static float color[] = {
     1.0f, 0.0f, 0.0f,   // 右上角
     0.0f, 1.0f, 0.0f,   // 右下角
     0.0f, 0.0f, 1.0f,   // 左下角
@@ -26,7 +26,7 @@ float color[] = {
 };
 
 //纹理坐标
-float texture[] = {
+static float texture[] = {
     0, 0,   //左上
     1, 0,   //右上
     1, 1,   //右下
@@ -46,13 +46,11 @@ SampleGame::~SampleGame() {
     
 }
 
-void SampleGame::initResourcePath(string *resource) {
-    this->resourcePath = resource;
-    v_path = new string(*(this->resourcePath) + "/" + "shaders/vertex.glsl");
-    f_path = new string(*(this->resourcePath) + "/" + "shaders/fragment.glsl");
-}
-
-void SampleGame::initialize() {
+void SampleGame::initialize(string *resource) {
+    this->_resourcePath = resource;
+    v_path = new string(*(this->resPath()) + "/" + "shaders/vertex.glsl");
+    f_path = new string(*(this->resPath()) + "/" + "shaders/fragment.glsl");
+    
     _shader = new ShaderManager();
     _shader->CompileShaders(*v_path, *f_path);
     _shader->LinkShaders();
@@ -74,7 +72,7 @@ void SampleGame::initialize() {
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
     _vao->unbind();
     
-    string image_path = string(*(this->resourcePath) + "/" + "images/mei.png");
+    string image_path = string(*(this->resPath()) + "/" + "images/mei.png");
     _texture_buffer = new TextureBuffer(image_path.c_str());
     TextureBaseParam *param = new TextureNormalParam();
     _texture_buffer->createMipMap(param);

@@ -17,13 +17,14 @@ namespace GameEngine {
 
 class BaseGame {
   
-private:
+protected:
     vector<Node*> nodes;
+    string* _resourcePath;
 public:
     BaseGame();
     ~BaseGame();
-    
-    virtual void initialize();
+    inline string* resPath(){return _resourcePath;}
+    virtual void initialize(string *resPath);
     virtual void ready();
     virtual void resize(int width, int height);
     virtual void update();

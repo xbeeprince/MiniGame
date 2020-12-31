@@ -13,10 +13,10 @@ Application::Application(BaseGame *game) : _game(game) {
     
 }
 
-void Application::initialize() {
+void Application::initialize(string* resourcePath) {
     cout << "Application init..." << endl;
     _graphics = new Graphics();
-    _game->initialize();
+    _game->initialize(resourcePath);
 }
 
 void Application::loop() {
